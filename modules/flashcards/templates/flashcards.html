@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Flashcards</title>
+    <link rel="stylesheet" href="{{ url_for('flashcards.static', filename='css/flashcards.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Knowledge Flashcards</h1>
+            <nav>
+                <a href="{{ url_for('graph.index') }}">Return to Knowledge Graph</a>
+            </nav>
+        </header>
+        
+        <div class="filters-container">
+            <div class="filter-group">
+                <label for="categoryFilter">Filter by Category:</label>
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                    <!-- Categories will be loaded here dynamically -->
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="levelFilter">Filter by Level:</label>
+                <select id="levelFilter">
+                    <option value="">All Levels</option>
+                    <option value="0">Level 0</option>
+                    <option value="1">Level 1</option>
+                    <option value="2">Level 2</option>
+                    <option value="3">Level 3</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <select id="termSelect">
+                <option value="">Select a term...</option>
+                <!-- Terms will be loaded here dynamically -->
+            </select>
+            <div class="buttons">
+                <button id="prevBtn" disabled>Previous</button>
+                <button id="nextBtn" disabled>Next</button>
+                <button id="shuffleBtn">Shuffle</button>
+                <button id="toggleViewBtn">List View</button>
+            </div>
+        </div>
+        
+        <div id="loading" class="hidden">
+            <div class="loading-spinner"></div>
+            <p>Loading...</p>
+        </div>
+        
+        <div id="flashcardContainer" class="hidden">
+            <div class="flashcard" id="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">
+                        <h2 id="term"></h2>
+                        <p class="click-to-flip">Click to see definition</p>
+                    </div>
+                    <div class="flashcard-back">
+                        <p id="definition"></p>
+                        <p class="click-to-flip">Click to see term</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="progress-indicator">
+                <span id="currentIndex">0</span> / <span id="totalCards">0</span>
+            </div>
+        </div>
+        
+        <div id="listContainer" class="hidden">
+            <div class="term-list">
+                <!-- Terms and definitions will be listed here -->
+            </div>
+        </div>
+        
+        <div id="no-terms-message" class="hidden">
+            <p>No terms found for the selected filters. Try a different selection.</p>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('flashcards.static', filename='js/flashcards.js') }}"></script>
+</body>
+</html>

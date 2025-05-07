@@ -1,0 +1,242 @@
+{
+  "machine learning": {
+    "definition": "Machine Learning is a subset of Artificial Intelligence that focuses on creating algorithms and models that enable computers to learn and improve their performance on a specific task without being explicitly programmed. It involves feeding data into a model, which then learns patterns and makes predictions or decisions based on that data. Machine Learning can be categorized into three main types: Supervised Learning, Unsupervised Learning, and Reinforcement Learning.",
+    "timestamp": "2025-05-04T14:09:58.558516"
+  },
+  "reinforcement learning": {
+    "definition": "A training method based on rewarding desired behaviors and punishing undesired ones, allowing agents to learn optimal actions through trial and error interactions with an environment.",
+    "timestamp": "2025-04-25T10:26:09.848838"
+  },
+  "neural networks": {
+    "definition": "Neural Networks: A machine learning model inspired by the human brain, consisting of interconnected nodes (neurons) organized in layers. It learns from data by adjusting the strength of connections between neurons, enabling it to recognize patterns, make predictions, or take actions.",
+    "timestamp": "2025-04-25T10:41:17.481476"
+  },
+  "lstm": {
+    "definition": "LSTM (Long Short-Term Memory) is a type of recurrent neural network architecture designed to handle sequential data and learn long-term dependencies. It addresses the vanishing gradient problem by introducing memory cells and gates that regulate the flow of information, enabling the network to selectively remember or forget information over extended periods.",
+    "timestamp": "2025-04-25T10:41:25.187951"
+  },
+  "supervised learning": {
+    "definition": "Supervised Learning is a machine learning approach where the model learns from labeled training data. The model is trained on input-output pairs, with the goal of learning a mapping function to predict the correct output for new, unseen inputs. Supervised Learning is used for classification and regression tasks.",
+    "timestamp": "2025-04-25T10:43:50.845434"
+  },
+  "decision trees": {
+    "definition": "Decision Trees: A machine learning model that makes predictions or decisions by recursively splitting data based on feature values, forming a tree-like structure of if-then rules. The tree consists of internal decision nodes that test features and leaf nodes that make final classifications or predictions.",
+    "timestamp": "2025-05-04T14:15:16.817528"
+  },
+  "unsupervised learning": {
+    "definition": "Unsupervised Learning is a machine learning approach where the model learns patterns and relationships from unlabeled data without explicit guidance. The algorithm explores the data to discover hidden structures, cluster similar data points, or reduce dimensionality. Its goal is to gain insights from the data's inherent organization without predefined labels or outputs.",
+    "timestamp": "2025-04-25T10:43:56.782035"
+  },
+  "ensemble methods": {
+    "definition": "Ensemble Methods: Machine learning techniques that combine multiple models to improve overall performance and robustness. Ensemble methods leverage the collective predictions of individual models, which can be of the same or different types, to make more accurate and reliable predictions than any single model alone.",
+    "timestamp": "2025-04-25T10:44:00.006236"
+  },
+  "pre-pruning": {
+    "definition": "Pre-pruning is a technique used in decision tree learning where the tree is pruned by stopping its growth early, before it perfectly classifies the training set. This is done by setting a threshold on the maximum depth of the tree or the minimum number of samples required to split an internal node. Pre-pruning helps to prevent overfitting and reduces the complexity of the decision tree.",
+    "timestamp": "2025-04-25T11:10:32.791103"
+  },
+  "imputation": {
+    "definition": "Imputation is a technique used to estimate and fill in missing values in a dataset based on the available information. It involves using statistical methods or machine learning algorithms to predict the most likely values for the missing data points, allowing the dataset to be used for analysis or modeling purposes.",
+    "timestamp": "2025-04-25T11:10:35.354231"
+  },
+  "entropy": {
+    "definition": "Entropy: A measure of impurity or uncertainty in a set of data, calculated by the probability distribution of the classes. It quantifies the expected amount of information needed to classify a data point in a partitioned dataset. Higher entropy indicates greater impurity and less information gain.",
+    "timestamp": "2025-04-25T11:10:38.725912"
+  },
+  "gradient boosting": {
+    "definition": "Gradient Boosting is an ensemble machine learning technique that sequentially trains a series of weak models, with each model attempting to correct the errors of the previous ones. The models are trained using a gradient descent optimization process to minimize a loss function. Gradient Boosting combines the predictions from all the models to create a strong learner with improved performance.",
+    "timestamp": "2025-04-25T11:10:42.000599"
+  },
+  "gini impurity": {
+    "definition": "Gini Impurity: A measure of the likelihood of incorrectly classifying a randomly chosen element in a dataset if it were randomly labeled according to the distribution of class labels. It is used as a splitting criterion in decision trees to determine the quality of a split, where a lower Gini Impurity indicates a better split.",
+    "timestamp": "2025-04-25T11:10:45.382873"
+  },
+  "post-pruning": {
+    "definition": "Post-pruning is a technique used in decision tree learning where a tree is fully grown and then simplified by removing branches that do not significantly contribute to the tree's predictive accuracy. This pruning process helps reduce overfitting and improve the tree's generalization performance on unseen data. Post-pruning is performed after the tree is built, in contrast to pre-pruning, which stops the tree's growth early based on a stopping criterion.",
+    "timestamp": "2025-04-25T11:10:48.964239"
+  },
+  "gain ratio": {
+    "definition": "Gain Ratio is a modification of Information Gain that reduces its bias towards attributes with many values by normalizing Information Gain by the attribute's entropy. It is used in decision tree learning to determine the best attribute for splitting data at each node. Gain Ratio seeks to balance the Information Gain of an attribute against the entropy or diversity of its values.",
+    "timestamp": "2025-04-25T11:10:52.061498"
+  },
+  "information gain": {
+    "definition": "Information Gain: A measure used in decision trees to determine the best attribute for splitting data at each node. It quantifies the reduction in entropy or impurity achieved by splitting based on a particular attribute, allowing the selection of the most informative features.",
+    "timestamp": "2025-04-25T11:10:54.493277"
+  },
+  "handling missing values": {
+    "definition": "Handling Missing Values: The process of dealing with incomplete data points when building decision trees. Strategies include deleting instances with missing values, assigning the most common value, or using surrogate splits to find the best alternative attribute to split on. The goal is to enable the decision tree to handle missing data effectively.",
+    "timestamp": "2025-04-25T11:10:54.984140"
+  },
+  "pruning": {
+    "definition": "Pruning is a technique used in decision trees to remove branches that are not contributing significantly to the model's predictive accuracy. It helps simplify the tree, reduce overfitting, and improve generalization to unseen data. Pruning can be done during tree construction (pre-pruning) or after the tree is fully grown (post-pruning).",
+    "timestamp": "2025-04-25T11:10:57.832205"
+  },
+  "splitting criteria": {
+    "definition": "Splitting Criteria:\nA measure used by the CART (Classification and Regression Trees) algorithm to determine the best feature and threshold for dividing a dataset into subsets. The most common splitting criteria is Gini Impurity, which aims to minimize the probability of misclassification by selecting the split that results in the most homogeneous subsets.",
+    "timestamp": "2025-04-25T11:10:58.394320"
+  },
+  "cart algorithm": {
+    "definition": "CART (Classification and Regression Trees) is a decision tree algorithm used for both classification and regression tasks. It constructs binary trees by splitting data recursively based on feature values, aiming to maximize information gain or minimize impurity at each split. CART employs techniques like pruning to avoid overfitting and can be used as a base learner in ensemble methods.",
+    "timestamp": "2025-04-25T11:11:02.186078"
+  },
+  "surrogate splits": {
+    "definition": "Surrogate Splits: A technique used in decision tree algorithms to handle missing values by finding another feature that best approximates the original splitting feature. It allows the algorithm to make a split even when the primary feature value is missing, based on the next best predictive feature.",
+    "timestamp": "2025-04-25T11:11:05.349407"
+  },
+  "random forests": {
+    "definition": "Random Forests is an ensemble learning method that constructs a multitude of decision trees and outputs the class that is the mode of the classes (for classification) or mean prediction (for regression) of the individual trees. It combines random feature selection with bagging to create an uncorrelated forest of trees whose prediction is more accurate than that of any individual tree.",
+    "timestamp": "2025-04-25T11:11:08.728365"
+  },
+  "convolutional neural networks": {
+    "definition": "Convolutional Neural Networks (CNNs) are a type of deep learning algorithm designed to process data with grid-like topology, such as images. They use convolutional layers to automatically learn hierarchical feature representations from input data, making them particularly well-suited for computer vision tasks.",
+    "timestamp": "2025-04-25T16:33:24.892707"
+  },
+  "image classification": {
+    "definition": "Image Classification: A task in computer vision where a model is trained to assign a label or category to an input image based on its content. The model learns to recognize patterns and features in the images to determine the most likely class. Image classification is a fundamental problem in computer vision with applications like object recognition, scene understanding, and content-based image retrieval.",
+    "timestamp": "2025-04-25T16:33:27.862545"
+  },
+  "object detection": {
+    "definition": "Object Detection is a computer vision task that involves identifying and localizing objects within an image. It goes beyond image classification by determining the location of objects via bounding boxes in addition to labeling the class of each detected object. Object detection is commonly performed using convolutional neural networks.",
+    "timestamp": "2025-04-25T16:33:30.177758"
+  },
+  "recurrent neural networks": {
+    "definition": "Recurrent Neural Networks (RNNs) are a type of neural network designed to process sequential data by maintaining an internal state or \"memory\" that allows information to persist across time steps. Unlike feedforward networks, RNNs have connections that loop back, enabling them to capture temporal dependencies and make predictions based on the current input and the context from previous inputs.",
+    "timestamp": "2025-04-25T16:33:33.595037"
+  },
+  "clustering": {
+    "definition": "Clustering is an unsupervised learning technique that groups similar data points together based on their inherent characteristics or patterns, without using predefined labels. The goal is to maximize the similarity within clusters and minimize the similarity between different clusters. Clustering algorithms, such as K-Means and Hierarchical Clustering, are used for tasks like customer segmentation, anomaly detection, and data compression.",
+    "timestamp": "2025-04-25T16:34:39.781842"
+  },
+  "dimensionality reduction": {
+    "definition": "Dimensionality Reduction: A technique that reduces the number of features in a dataset while retaining the essential information. It projects data from a high-dimensional space to a lower-dimensional space, making it easier to visualize, analyze, and process the data while minimizing information loss.",
+    "timestamp": "2025-04-25T16:34:40.435758"
+  },
+  "k-means": {
+    "definition": "K-Means is a centroid-based clustering algorithm that partitions n observations into k clusters, where each observation belongs to the cluster with the nearest mean (centroid). It iteratively assigns data points to clusters and updates the cluster centroids until convergence is reached. K-Means is related to Hierarchical Clustering, but it requires specifying the number of clusters (k) in advance.",
+    "timestamp": "2025-04-25T16:34:40.581747"
+  },
+  "hierarchical clustering": {
+    "definition": "Hierarchical Clustering is a clustering method that builds a hierarchy of clusters by either merging smaller clusters into larger ones (agglomerative approach) or dividing larger clusters into smaller ones (divisive approach). Unlike K-Means, the number of clusters does not need to be specified in advance, and the result is a tree-like structure called a dendrogram that shows the hierarchical relationships between clusters.",
+    "timestamp": "2025-04-25T16:34:40.991765"
+  },
+  "t-sne": {
+    "definition": "t-SNE (t-Distributed Stochastic Neighbor Embedding) is a non-linear dimensionality reduction technique used for visualizing high-dimensional data in a lower-dimensional space, typically 2D or 3D. It preserves the local structure of the data points while also revealing global patterns, making it effective for identifying clusters and outliers in the data.",
+    "timestamp": "2025-04-25T16:34:41.276836"
+  },
+  "principal component analysis (pca)": {
+    "definition": "Principal Component Analysis (PCA) is a dimensionality reduction technique that identifies the principal components, which are uncorrelated variables that maximize variance, in high-dimensional data. PCA projects the data onto a lower-dimensional space formed by a subset of the top principal components, enabling data compression and visualization while preserving the essential structure of the original data.",
+    "timestamp": "2025-04-25T16:34:41.388570"
+  },
+  "denoising autoencoders": {
+    "definition": "Denoising Autoencoders (DAEs) are a type of autoencoder that learns to reconstruct clean input data from corrupted or noisy versions of that data. By training on noisy inputs, DAEs learn robust feature representations and become less sensitive to small variations or noise in the input, making them useful for tasks like image denoising and representation learning.",
+    "timestamp": "2025-04-25T16:41:23.294172"
+  },
+  "autoencoders": {
+    "definition": "Autoencoders are a type of neural network that learns to compress and reconstruct data unsupervised. They consist of an encoder that maps the input to a lower-dimensional representation, and a decoder that reconstructs the original input from this representation. Autoencoders are used for dimensionality reduction, feature learning, and anomaly detection.",
+    "timestamp": "2025-04-25T16:42:08.965084"
+  },
+  "anomaly detection": {
+    "definition": "Anomaly Detection is a technique used to identify rare items, events, or observations that differ significantly from the majority of the data. It aims to find patterns in data that do not conform to expected behavior, often without prior knowledge of what that anomalous behavior looks like. Anomaly detection is commonly used for fraud detection, system health monitoring, and detecting outliers in datasets.",
+    "timestamp": "2025-04-25T16:42:11.994529"
+  },
+  "one-class svm": {
+    "definition": "One-Class SVM is a machine learning algorithm used for anomaly detection, where the goal is to identify unusual or rare instances in a dataset. It learns a decision boundary that encapsulates the majority of the data points, considering them as normal instances, while points falling outside this boundary are classified as anomalies. One-Class SVM is an unsupervised learning method that only requires samples from one class (the normal class) for training.",
+    "timestamp": "2025-04-25T16:43:05.656729"
+  },
+  "isolation forest": {
+    "definition": "Isolation Forest is an unsupervised machine learning algorithm for anomaly detection that isolates anomalies by randomly selecting a feature and a split value between the maximum and minimum values of that feature. By creating decision trees, the algorithm identifies anomalies as instances that require fewer splits to be isolated, exploiting the fact that anomalies are \"few and different.\"",
+    "timestamp": "2025-04-25T16:43:08.762075"
+  },
+  "classification": {
+    "definition": "Classification is a supervised learning technique that predicts the category or class of an input data point. It learns from labeled training data to build a model that can assign new, unseen data points into predefined classes. Classification algorithms include logistic regression, support vector machines, decision trees, and naive Bayes.",
+    "timestamp": "2025-04-25T17:22:58.413346"
+  },
+  "polynomial regression": {
+    "definition": "Polynomial Regression:\nA regression technique that models the relationship between the independent variable x and the dependent variable y as an nth degree polynomial. Unlike linear regression, polynomial regression fits a nonlinear relationship between x and y, which can be useful for capturing more complex patterns in data.",
+    "timestamp": "2025-04-25T17:22:58.958854"
+  },
+  "logistic regression": {
+    "definition": "Logistic Regression is a statistical method for binary classification that estimates the probability of an instance belonging to a particular class. It models the relationship between the input features and the output class using a logistic (sigmoid) function, enabling the prediction of categorical outcomes. Logistic Regression is widely used for tasks such as spam email detection, customer churn prediction, and medical diagnosis.",
+    "timestamp": "2025-04-25T17:23:09.605869"
+  },
+  "support vector machines": {
+    "definition": "Support Vector Machines (SVMs) are a supervised learning algorithm used for classification and regression tasks. SVMs aim to find the optimal hyperplane that maximally separates different classes in a high-dimensional space. The algorithm focuses on the data points closest to the decision boundary (support vectors) to construct the hyperplane.",
+    "timestamp": "2025-04-25T17:23:12.922542"
+  },
+  "naive bayes": {
+    "definition": "Naive Bayes is a probabilistic machine learning algorithm used for classification tasks, based on applying Bayes' theorem with the \"naive\" assumption of conditional independence between features. It calculates the probability of each class for a given input and predicts the class with the highest probability. Naive Bayes is simple, fast, and often performs well, especially with high-dimensional data.",
+    "timestamp": "2025-04-25T17:23:16.051601"
+  },
+  "regression": {
+    "definition": "Regression is a supervised learning technique used to predict continuous numerical values. It works by finding the relationship between input features and a target variable, enabling the model to make predictions on new, unseen data. Common types of regression include linear regression and polynomial regression.",
+    "timestamp": "2025-04-25T17:23:18.801728"
+  },
+  "linear regression": {
+    "definition": "Linear Regression: A statistical modeling technique that finds a linear relationship between a dependent variable and one or more independent variables. It aims to fit a straight line to the data that minimizes the sum of squared differences between the observed and predicted values. Linear regression is the simplest form of regression and is often used for prediction and understanding the impact of variables.",
+    "timestamp": "2025-04-25T17:23:21.195900"
+  },
+  "feedforward neural networks": {
+    "definition": "Feedforward Neural Networks are a type of artificial neural network in which information flows in one direction from input to output, without any feedback loops. They consist of an input layer, one or more hidden layers, and an output layer, where each node in a layer is connected to all nodes in the next layer. Feedforward Neural Networks are used for tasks such as classification and regression.",
+    "timestamp": "2025-04-25T17:23:24.544959"
+  },
+  "cybersecurity": {
+    "definition": "Cybersecurity:\nThe practice of protecting systems, networks, and programs from digital attacks, unauthorized access, and data breaches. It involves implementing security measures to ensure the confidentiality, integrity, and availability of information assets. Cybersecurity aims to safeguard individuals, organizations, and governments from cyberthreats such as malware, phishing, and hacking attempts.",
+    "timestamp": "2025-04-27T20:16:19.302892"
+  },
+  "domain adaptation": {
+    "definition": "Domain Adaptation is a subfield of Transfer Learning that focuses on applying a model trained on a source domain to a different but related target domain. The goal is to leverage knowledge from the source domain to improve performance on the target domain, which often has limited labeled data. Domain Adaptation techniques aim to bridge the gap between the source and target domains by learning domain-invariant features or representations.",
+    "timestamp": "2025-04-30T17:02:51.356995"
+  },
+  "deep learning": {
+    "definition": "Deep Learning is a subfield of Machine Learning that uses artificial neural networks with multiple layers to learn hierarchical representations from data. It excels at learning complex patterns and features directly from raw data inputs, enabling it to achieve state-of-the-art performance on tasks like image classification, natural language processing, and speech recognition.",
+    "timestamp": "2025-04-30T18:43:36.956400"
+  },
+  "association rules": {
+    "definition": "Association Rules: A technique in unsupervised learning that discovers interesting relationships or patterns between variables in large databases. It identifies frequent if-then associations called association rules, such as \"If a customer buys item A, they are likely to also buy item B.\" Association rules are commonly used for market basket analysis, web usage mining, and recommendation systems.",
+    "timestamp": "2025-04-30T18:43:42.788914"
+  },
+  "generative adversarial networks": {
+    "definition": "Generative Adversarial Networks (GANs) are a deep learning framework that pits two neural networks against each other - a generator that creates new data instances and a discriminator that evaluates them for authenticity. The two networks are trained together in a zero-sum game, where the generator learns to create increasingly realistic data while the discriminator learns to better distinguish real from fake, until the generated instances are indistinguishable from the real data.",
+    "timestamp": "2025-04-30T18:43:46.900564"
+  },
+  "bagging": {
+    "definition": "Bagging (Bootstrap Aggregating) is an ensemble method that combines multiple models trained on different subsets of the training data, which are created by randomly sampling with replacement. The individual models' predictions are then aggregated (typically by voting or averaging) to make the final prediction, reducing variance and improving generalization. Bagging is the foundation for popular algorithms like Random Forests.",
+    "timestamp": "2025-04-30T18:43:50.440669"
+  },
+  "boosting": {
+    "definition": "Boosting is an ensemble method that combines multiple weak learners to create a strong learner. It iteratively trains models, with each new model focusing on the mistakes of the previous ones. The final prediction is a weighted sum of all the models' predictions.",
+    "timestamp": "2025-04-30T18:43:53.336981"
+  },
+  "stacking": {
+    "definition": "Stacking is an ensemble learning technique that combines multiple base models' predictions using a meta-model. The base models are trained on the original training data, and the meta-model is trained on the outputs of the base models to make the final prediction. Stacking aims to leverage the strengths of different models and reduce generalization error.",
+    "timestamp": "2025-04-30T18:43:56.700814"
+  },
+  "gradient boosting machines": {
+    "definition": "Gradient Boosting Machines (GBMs) are a machine learning technique that combines multiple weak learners, typically decision trees, to create a strong predictive model. GBMs iteratively train each new model to correct the errors made by the previous models, gradually improving the overall performance. The final prediction is obtained by combining the outputs of all the trained models.",
+    "timestamp": "2025-04-30T18:43:56.404667"
+  },
+  "q-learning": {
+    "definition": "Q-Learning is a model-free reinforcement learning algorithm that learns an optimal action-value function Q(s,a), which represents the expected future rewards of taking action a in state s. It updates Q-values based on the Bellman equation using samples of transitions and rewards from interacting with the environment. Q-learning is an off-policy algorithm, meaning it can learn from data generated by a different policy than the one being optimized.",
+    "timestamp": "2025-05-01T13:37:35.982040"
+  },
+  "policy gradients": {
+    "definition": "Policy Gradients: A reinforcement learning approach that directly optimizes the policy function to maximize expected rewards. Instead of learning a value function, policy gradient methods parametrize the policy and update it using gradient ascent on the expected return. This allows for learning stochastic policies in high-dimensional or continuous action spaces.",
+    "timestamp": "2025-05-01T13:37:39.911904"
+  },
+  "actor-critic methods": {
+    "definition": "Actor-Critic Methods are a type of reinforcement learning algorithm that combines the benefits of both value-based (e.g., Q-learning) and policy-based (e.g., policy gradients) methods. They use an actor to select actions based on a learned policy and a critic to estimate the value function, which helps the actor improve its policy. The actor and critic learn simultaneously, with the critic guiding the actor towards better decisions.",
+    "timestamp": "2025-05-01T13:37:43.831719"
+  },
+  "fine-tuning": {
+    "definition": "Fine-tuning is a transfer learning technique where a pre-trained model is further trained on a smaller, task-specific dataset to adapt it to a new domain or task. The model's architecture is preserved, but its parameters are updated through additional training, allowing it to leverage its pre-existing knowledge while specializing in the new task.",
+    "timestamp": "2025-05-01T14:34:02.667849"
+  },
+  "policy gradient methods": {
+    "definition": "Policy Gradient Methods are a class of Reinforcement Learning algorithms that directly optimize the policy function through gradient ascent on the expected return. They work by estimating the gradient of the policy, with respect to its parameters, to maximize the expected cumulative reward. Unlike Q-learning, which learns a value function, Policy Gradient Methods directly learn the optimal policy without the need for a separate value function.",
+    "timestamp": "2025-05-01T14:34:06.625940"
+  },
+  "transfer learning": {
+    "definition": "Transfer Learning: A machine learning technique where a model trained on one task is repurposed on a second related task, usually by fine-tuning the model weights. It leverages the knowledge gained from the first task to improve performance on the second, enabling faster learning and reducing the need for large labeled datasets.",
+    "timestamp": "2025-05-01T14:34:09.701871"
+  }
+}

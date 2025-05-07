@@ -1,0 +1,126 @@
+{% extends 'graph/layout.html' %}
+
+{% block title %}Knowledge Graph Explorer{% endblock %}
+
+{% block sidebar %}
+  <h2 style="padding: 10px; margin-top: 0;">Details</h2>
+  <div id="my-new-widget" style="padding: 10px;">
+    <p>Select a node in the graph to see its details, or add new content here.</p>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div id="graph-container">
+    <div id="topic-panel" class="panel">
+      <h3>Topic</h3>
+      <input type="text" id="topic-input" placeholder="Enter a topic...">
+      <button id="change-topic-button">Change Topic</button>
+    </div>
+    
+    <div id="add-term-panel" class="panel">
+      <h3>Auto-Add Term</h3>
+      <input type="text" id="new-term-input" placeholder="Enter a new term...">
+      <button id="add-term-button">Add to Graph</button>
+      <div id="add-term-status" style="display: none;">
+        <div class="status-text"></div>
+      </div>
+    </div>
+    
+    <div id="selected-info-panel" class="panel">
+      <div id="selected-info"></div>
+    </div>
+    
+    <div class="zoom-controls">
+      <button id="zoom-in">+</button>
+      <button id="zoom-reset">⊙</button>
+      <button id="zoom-out">-</button>
+    </div>
+    
+    <div id="similarity-toggle" class="panel" style="bottom: 20px; left: 20px; top: auto;">
+      <label class="switch">
+        <input type="checkbox" id="similarity-checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+    
+    <div id="help-tooltip">Right-click on nodes or links to modify the graph</div>
+  </div>
+  
+  <div id="context-menu"></div>
+  
+  <div id="modal">
+    <div id="modal-content">
+      <h3 id="modal-title">Title</h3>
+      <div id="modal-body"></div>
+      <div id="modal-buttons">
+        <button id="modal-cancel" class="secondary">Cancel</button>
+        <button id="modal-confirm">Confirm</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="loading-spinner">
+    <div class="spinner"></div>
+  </div>
+  
+  <script src="{{ url_for('graph.static', filename='js/graph.js') }}"></script>
+
+
+  <h1 id="main-title">Interactive Concept Graph</h1>
+    
+  <div id="graph-container">
+      <div id="topic-panel" class="panel">
+          <h3>Topic</h3>
+          <input type="text" id="topic-input" placeholder="Enter a topic...">
+          <button id="change-topic-button">Change Topic</button>
+      </div>
+      
+      <div id="add-term-panel" class="panel">
+          <h3>Auto-Add Term</h3>
+          <input type="text" id="new-term-input" placeholder="Enter a new term...">
+          <button id="add-term-button">Add to Graph</button>
+          <div id="add-term-status" style="display: none;">
+              <div class="status-text"></div>
+          </div>
+      </div>
+      
+      <div id="selected-info-panel" class="panel">
+          <div id="selected-info"></div>
+      </div>
+      
+      <div class="zoom-controls">
+          <button id="zoom-in">+</button>
+          <button id="zoom-reset">⊙</button>
+          <button id="zoom-out">-</button>
+      </div>
+      
+      <div id="similarity-toggle" class="panel" style="bottom: 20px; left: 20px; top: auto;">
+          <label class="switch">
+              <input type="checkbox" id="similarity-checkbox">
+              <span class="slider"></span>
+          </label>
+      </div>
+      
+      <div id="help-tooltip">Right-click on nodes or links to modify the graph</div>
+  </div>
+  
+  <div id="context-menu"></div>
+  
+  <div id="modal">
+      <div id="modal-content">
+          <h3 id="modal-title">Title</h3>
+          <div id="modal-body"></div>
+          <div id="modal-buttons">
+              <button id="modal-cancel" class="secondary">Cancel</button>
+              <button id="modal-confirm">Confirm</button>
+          </div>
+      </div>
+  </div>
+  
+  <div class="loading-spinner">
+      <div class="spinner"></div>
+  </div>
+  
+  <script src="{{ url_for('graph.static', filename='js/graph.js') }}"></script>
+
+{% endblock %}

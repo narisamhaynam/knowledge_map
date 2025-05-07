@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Knowledge Graph Home{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Welcome to Knowledge Graph Explorer</h2>
+    
+    <div class="app-description">
+        <p>This application allows you to create, visualize, and interact with knowledge graphs on any topic.</p>
+        <p>Use the navigation menu to access different modules:</p>
+        
+        <div class="module-cards">
+            <div class="card">
+                <h3>Graph Explorer</h3>
+                <p>Create and visualize knowledge graphs with interactive D3.js visualization.</p>
+                <a href="{{ url_for('graph.index') }}" class="button">Launch Graph Explorer</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block css %}
+<style>
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .app-description {
+        margin: 40px 0;
+    }
+    
+    .module-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    
+    .card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+        transition: transform 0.3s ease;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .button {
+        display: inline-block;
+        background: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 4px;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: background 0.3s ease;
+    }
+    
+    .button:hover {
+        background: #45a049;
+    }
+</style>
+{% endblock %}

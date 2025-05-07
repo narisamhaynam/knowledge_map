@@ -1,0 +1,282 @@
+{
+  "core": "Machine Learning",
+  "concepts": [
+    {
+      "id": "Machine Learning",
+      "level": 0,
+      "parent": null
+    },
+    {
+      "id": "Supervised Learning",
+      "level": 1,
+      "parent": "Machine Learning"
+    },
+    {
+      "id": "Unsupervised Learning",
+      "level": 1,
+      "parent": "Machine Learning"
+    },
+    {
+      "id": "Semi-Supervised Learning",
+      "level": 1,
+      "parent": "Machine Learning"
+    },
+    {
+      "id": "Reinforcement Learning",
+      "level": 1,
+      "parent": "Machine Learning"
+    },
+    {
+      "id": "Deep Learning",
+      "level": 1,
+      "parent": "Machine Learning"
+    },
+    {
+      "id": "Classification",
+      "level": 2,
+      "parent": "Supervised Learning"
+    },
+    {
+      "id": "Regression",
+      "level": 2,
+      "parent": "Supervised Learning"
+    },
+    {
+      "id": "Decision Trees",
+      "level": 2,
+      "parent": "Supervised Learning"
+    },
+    {
+      "id": "Support Vector Machines",
+      "level": 2,
+      "parent": "Supervised Learning"
+    },
+    {
+      "id": "Naive Bayes",
+      "level": 2,
+      "parent": "Supervised Learning"
+    },
+    {
+      "id": "Clustering",
+      "level": 2,
+      "parent": "Unsupervised Learning"
+    },
+    {
+      "id": "Dimensionality Reduction",
+      "level": 2,
+      "parent": "Unsupervised Learning"
+    },
+    {
+      "id": "Anomaly Detection",
+      "level": 2,
+      "parent": "Unsupervised Learning"
+    },
+    {
+      "id": "Association Rule Learning",
+      "level": 2,
+      "parent": "Unsupervised Learning"
+    },
+    {
+      "id": "Self-Organizing Maps",
+      "level": 2,
+      "parent": "Unsupervised Learning"
+    },
+    {
+      "id": "Convolutional Neural Networks",
+      "level": 2,
+      "parent": "Deep Learning"
+    },
+    {
+      "id": "Recurrent Neural Networks",
+      "level": 2,
+      "parent": "Deep Learning"
+    },
+    {
+      "id": "Autoencoders",
+      "level": 2,
+      "parent": "Deep Learning"
+    },
+    {
+      "id": "Generative Adversarial Networks",
+      "level": 2,
+      "parent": "Deep Learning"
+    },
+    {
+      "id": "Transfer Learning",
+      "level": 2,
+      "parent": "Deep Learning"
+    },
+    {
+      "id": "Q-Learning",
+      "level": 2,
+      "parent": "Reinforcement Learning"
+    },
+    {
+      "id": "Policy Gradients",
+      "level": 2,
+      "parent": "Reinforcement Learning"
+    },
+    {
+      "id": "Monte Carlo Methods",
+      "level": 2,
+      "parent": "Reinforcement Learning"
+    },
+    {
+      "id": "Actor-Critic Methods",
+      "level": 2,
+      "parent": "Reinforcement Learning"
+    },
+    {
+      "id": "Multi-Armed Bandits",
+      "level": 2,
+      "parent": "Reinforcement Learning"
+    },
+    {
+      "id": "Logistic Regression",
+      "level": 3,
+      "parent": "Classification"
+    },
+    {
+      "id": "K-Nearest Neighbors",
+      "level": 3,
+      "parent": "Classification"
+    },
+    {
+      "id": "Random Forests",
+      "level": 3,
+      "parent": "Classification"
+    },
+    {
+      "id": "Gradient Boosting",
+      "level": 3,
+      "parent": "Classification"
+    },
+    {
+      "id": "AdaBoost",
+      "level": 3,
+      "parent": "Classification"
+    },
+    {
+      "id": "Linear Regression",
+      "level": 3,
+      "parent": "Regression"
+    },
+    {
+      "id": "Polynomial Regression",
+      "level": 3,
+      "parent": "Regression"
+    },
+    {
+      "id": "Ridge Regression",
+      "level": 3,
+      "parent": "Regression"
+    },
+    {
+      "id": "Lasso Regression",
+      "level": 3,
+      "parent": "Regression"
+    },
+    {
+      "id": "Elastic Net",
+      "level": 3,
+      "parent": "Regression"
+    },
+    {
+      "id": "K-Means",
+      "level": 3,
+      "parent": "Clustering"
+    },
+    {
+      "id": "Hierarchical Clustering",
+      "level": 3,
+      "parent": "Clustering"
+    },
+    {
+      "id": "DBSCAN",
+      "level": 3,
+      "parent": "Clustering"
+    },
+    {
+      "id": "Gaussian Mixture Models",
+      "level": 3,
+      "parent": "Clustering"
+    },
+    {
+      "id": "Mean Shift",
+      "level": 3,
+      "parent": "Clustering"
+    },
+    {
+      "id": "Principal Component Analysis",
+      "level": 3,
+      "parent": "Dimensionality Reduction"
+    },
+    {
+      "id": "t-SNE",
+      "level": 3,
+      "parent": "Dimensionality Reduction"
+    },
+    {
+      "id": "Locally Linear Embedding",
+      "level": 3,
+      "parent": "Dimensionality Reduction"
+    },
+    {
+      "id": "Independent Component Analysis",
+      "level": 3,
+      "parent": "Dimensionality Reduction"
+    },
+    {
+      "id": "Non-Negative Matrix Factorization",
+      "level": 3,
+      "parent": "Dimensionality Reduction"
+    }
+  ],
+  "relationships": {
+    "Machine Learning->Supervised Learning": 67.38240814208984,
+    "Machine Learning->Unsupervised Learning": 59.812278747558594,
+    "Machine Learning->Semi-Supervised Learning": 62.7835693359375,
+    "Machine Learning->Reinforcement Learning": 68.0669174194336,
+    "Machine Learning->Deep Learning": 75.87894439697266,
+    "Supervised Learning->Classification": 47.9998893737793,
+    "Supervised Learning->Regression": 50.29374313354492,
+    "Supervised Learning->Decision Trees": 44.78820037841797,
+    "Supervised Learning->Support Vector Machines": 58.18828201293945,
+    "Supervised Learning->Naive Bayes": 46.90975570678711,
+    "Unsupervised Learning->Clustering": 63.954811096191406,
+    "Unsupervised Learning->Dimensionality Reduction": 54.014366149902344,
+    "Unsupervised Learning->Anomaly Detection": 52.97782516479492,
+    "Unsupervised Learning->Association Rule Learning": 57.55580139160156,
+    "Unsupervised Learning->Self-Organizing Maps": 65.71142578125,
+    "Deep Learning->Convolutional Neural Networks": 72.40935516357422,
+    "Deep Learning->Recurrent Neural Networks": 63.56843566894531,
+    "Deep Learning->Autoencoders": 67.20358276367188,
+    "Deep Learning->Generative Adversarial Networks": 61.33645248413086,
+    "Deep Learning->Transfer Learning": 66.2978744506836,
+    "Reinforcement Learning->Q-Learning": 81.33068084716797,
+    "Reinforcement Learning->Policy Gradients": 72.63923645019531,
+    "Reinforcement Learning->Monte Carlo Methods": 49.50678634643555,
+    "Reinforcement Learning->Actor-Critic Methods": 83.49910736083984,
+    "Reinforcement Learning->Multi-Armed Bandits": 69.67909240722656,
+    "Classification->Logistic Regression": 43.426612854003906,
+    "Classification->K-Nearest Neighbors": 37.493927001953125,
+    "Classification->Random Forests": 30.148523330688477,
+    "Classification->Gradient Boosting": 33.29552459716797,
+    "Classification->AdaBoost": 36.450504302978516,
+    "Regression->Linear Regression": 72.44831085205078,
+    "Regression->Polynomial Regression": 72.91923522949219,
+    "Regression->Ridge Regression": 68.52607727050781,
+    "Regression->Lasso Regression": 62.74779510498047,
+    "Regression->Elastic Net": 60.89767074584961,
+    "Clustering->K-Means": 76.11398315429688,
+    "Clustering->Hierarchical Clustering": 75.37448120117188,
+    "Clustering->DBSCAN": 73.09300231933594,
+    "Clustering->Gaussian Mixture Models": 59.54030227661133,
+    "Clustering->Mean Shift": 56.058597564697266,
+    "Dimensionality Reduction->Principal Component Analysis": 74.1763916015625,
+    "Dimensionality Reduction->t-SNE": 62.25936508178711,
+    "Dimensionality Reduction->Locally Linear Embedding": 69.44154357910156,
+    "Dimensionality Reduction->Independent Component Analysis": 61.61553955078125,
+    "Dimensionality Reduction->Non-Negative Matrix Factorization": 64.0618896484375
+  }
+}
